@@ -1,0 +1,26 @@
+import random
+
+
+a1=["🎁","🎁","🎁"]
+
+print(f"""           1         2       3
+1 {a1}""")
+
+a=random.randint(0,2)
+
+u=[11,12,13]
+
+h=u[a]
+
+y=int(input("""cerge ve siraya esasen sec (mesel:32(3cu cerge 2 ci sira): """))
+if y==h:
+    print('''
+
+    Qazandinizzz 🥳🥳🥳 
+    ''')
+
+else:
+    print('''
+    
+    Sansinizi bir daha sinayin :))''')
+    print(f"Hediyye {h} qutusunda idi")

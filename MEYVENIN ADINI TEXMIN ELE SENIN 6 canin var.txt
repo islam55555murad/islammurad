@@ -1,0 +1,46 @@
+print("Sizin 6 caniniz var yeni ki, ehtiyatli ol;)".upper())
+import random
+can=6
+word_list=['alma','armud','banan','kivi','sabalid','qoz','findiq','mandarin','ananas','uzum','ciyelek','gavali','erik']
+word=random.choice(word_list)
+display=[]
+for _ in range(len(word)):
+        display+="_"
+        
+while display!=list(word) :
+    guess=str(input("bu bir meyve adidir ve herfi texmin ederek tap:\n").lower())
+    for l in range(len(word)):
+        letter=list(word)[l]
+        if word==guess:
+            display=list(word)
+        elif letter==guess:
+            display[l]=letter
+            print("Duzdur") 
+            
+        else:
+            print(f"Sehvdir")
+    print(display)
+    
+    if "_" not in display:
+        
+        print("sen onu tapdin ve qazandin🥳")
+        
+    if guess not in display :
+        can-=1
+        if guess==word:
+            can+=1
+    if can==0:
+        print("Siz uduzdunuz:(, belke sonraki oyunda")
+        break
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

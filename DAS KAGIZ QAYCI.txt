@@ -1,0 +1,28 @@
+import random
+
+
+a=input(" DAS , KAGIZ , QAYCI : ")
+
+
+b=random.randint(0,2)
+
+
+p=["DAS","KAGIZ","QAYCI"]
+l=p[b]
+
+if a==l:
+    print("Heleki Berabere :)")
+elif a=="DAS" and l=="KAGIZ":
+    print("Kagiz tutaraq,Men QAZANDIM:)) , bir daha Oyuna razisanmi?")
+elif a=="DAS" and l=="QAYCI":
+    print("Men qayci tutdum ve sen Qazandin:( Gel yene oynayaq bu sefer men udacam :)")
+elif a=="KAGIZ" and l=="QAYCI":
+    print("Qayci tutaraq,Men QAZANDIM:)) , bir daha Oyuna razisanmi?")
+elif a=="KAGIZ" and l=="DAS":
+    print("Men Das tutdum ve sen Qazandin:( Gel yene oynayaq bu sefer men udacam :)")
+elif a=="QAYCI" and l=="KAGIZ":
+    print("Men Kagiz tutdum ve sen Qazandin:( Gel yene oynayaq bu sefer men udacam :)")
+elif a=="QAYCI" and l=="DAS":
+    print("DAS tutaraq,Men QAZANDIM:)) , bir daha Oyuna razisanmi?")
+else:
+    print("??????")

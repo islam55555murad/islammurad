@@ -1,0 +1,13 @@
+print("Listiniz biten zaman 0 yaziniz.")
+print(" ")
+b=[]
+a=int
+while a!=0:
+    a=int(input("Listinizin Reqemlerinizi giriniz: "))
+    b.append(a)
+
+i=0
+for u in b:
+    if u>i:
+        i=u
+print(i)

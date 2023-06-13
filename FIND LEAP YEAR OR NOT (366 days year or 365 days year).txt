@@ -1,0 +1,20 @@
+a=int(input("IL: "))
+
+b=a%4
+c=a%100
+d=a%400
+
+if d!=0:
+    if c==0:
+        print("not leap year")
+    elif b==0:
+        print("leap year")
+    else:
+        print("not leap year")
+        
+elif b==0:
+    print("leap year")
+    
+else:
+    print("not leap year")
+   

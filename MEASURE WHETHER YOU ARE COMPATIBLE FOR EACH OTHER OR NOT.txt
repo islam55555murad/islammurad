@@ -1,0 +1,24 @@
+a=input("Your name: ") 
+b=input("Your loved one's name: ") 
+c= a.lower()
+d= b.lower()
+f=c.count("t") + d.count("t") 
+f1=c.count("r") + d.count("r")
+f2=c.count("u") + d.count("u")
+f3=c.count("e") + d.count("e")
+f4=str(f+f1+f2+f3) 
+g=d.count("l") + c.count("l")
+g1=d.count("o") + c.count("o")
+g2=d.count("v") + c.count("v")
+g3=d.count("e") + c.count("e")
+g4=str(g+g1+g2+g3) 
+love_score1=f4+g4 
+love_score=int(love_score1) 
+if love_score<10 or love_score>90 : 
+    print(f"Your score is {love_score} , you go together like coke and mentos :D")
+elif 40<love_score<50: 
+    print(f"Your score is {love_score} , you are alright together")
+else: 
+    print(f"your score is {love_score}.") 
+
+print("This program measure your compability,and who are compatible get good marriage ,whereas it is believed that who are not compatible with each other get married in most cases ")

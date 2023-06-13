@@ -1,0 +1,58 @@
+print("""
+      🌹 TESTER designed by ISLAM MURADOV 🌹 
+
+it refers to Lyubomirsky, S., & Lepper, H. (1999). A measure of subjective happiness: Preliminary reliability and construct validation. Social Indicators Research, 46, 137-155.
+
+IF YOU WANNA TEST YOUR HAPPYNESS TRUST ME MY DEAR 😎 
+
+My dear, you should answer them between [1-7]
+where you feel yourself close to
+""")
+
+
+a=int(input("""In general, I consider myself.
+(a)not a very happy person  -------- (b) a very happy person
+
+                 1 2 3 4 5 6 7 
+
+                enter yours: """))
+b=int(input("""Compared to most of my peers, I consider myself:
+(a) less happy or (b) more happy
+                 1 2 3 4 5 6 7
+
+                enter yours: """))
+
+c=int(input("""Some people are generally very happy. They enjoy life regardless of what is going on, getting the most out of everything. To what extent does this characterization describe you? 
+(a) not at all  (b) a great deal
+                 1 2 3 4 5 6 7
+
+                enter yours: """))
+d=int(input("""Some people are generally not very happy. Although they are not depressed, they never seem as happy as they might be. To what extent does this characterization describe you?
+(a) not at all (b) a great deal
+                 1 2 3 4 5 6 7
+
+                enter yours: """))
+
+                
+                
+                
+f= a + b + c + 8 - d
+
+t  =float(f/4)
+
+if t < 1.75 :
+    
+    print("you are considered as unhappy person , you are sigma ;) ")
+    
+elif t< 3.5 :
+        print("you are considered as an average happy person")
+        
+elif t<5.25 :
+            
+            print("you are considered as happy person ")
+            
+elif t<7 :
+                
+                print("you are considered as pretty happy person , you are crazy :D ")
+                
+print("THANKS TO YOUR PARTICIPATION MY DEAR🌹 ")

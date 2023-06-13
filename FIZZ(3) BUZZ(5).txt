@@ -1,0 +1,9 @@
+for b in range(2,101):
+    if b%15==0:
+        print("FizzBuzz")
+    elif b%3==0:
+        print("Fizz")
+    elif b%5==0:
+        print("Buzz")
+    else:
+        print(b)

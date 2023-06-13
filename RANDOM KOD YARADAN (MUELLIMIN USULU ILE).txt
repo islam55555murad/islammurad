@@ -1,0 +1,34 @@
+import random
+password=""
+
+passs=[]
+
+l1=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers=['0','1','2','3','4','5','6','7','8','9']
+
+symbols=['!','#','$','%','&','(',')',"+","*"]
+
+l=int(input("How many Do you Wanna letters in your password?\n"))
+for i in range(1,l+1):
+    b=random.choice(l1)
+    passs.append(b)
+
+n=int(input("How many do you wanna numbers in your password?\n"))
+
+for i in range(1,n+1):
+    a=random.choice(numbers)
+    passs.append(a)
+
+s=int(input("How many do you wanna symbols in your password?\n"))
+for i in range(1,s+1):
+    c=random.choice(symbols)
+    passs.append(c)
+    
+
+for i in range(l+n+s):
+    ac=random.choice(passs)
+    password+=ac
+    passs.remove(ac)
+    
+    
+print(password)
